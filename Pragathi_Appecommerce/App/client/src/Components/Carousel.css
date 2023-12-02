@@ -1,0 +1,57 @@
+/* Carousel.css */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    height: 15rem;
+    max-width: 100%;
+    margin: 0 auto;
+    border: 1px solid rgb(55, 55, 207);
+  }
+  
+  .carousel-container {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .carousel-slide {
+    flex: 0 0 100%;
+    padding: 1rem;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0.7;
+  }
+  
+  .carousel-slide.active {
+    opacity: 1;
+  }
+  
+  .carousel-slide img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .caption {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .prev-button {
+    left: 1rem;
+  }
+  
+  .next-button {
+    right: 1rem;
+  }
+  
